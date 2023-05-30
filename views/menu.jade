@@ -1,0 +1,48 @@
+extends layout
+
+block content
+    .verticalContainer
+      #menuContainer
+        // alla olika items i menyn
+        .item(onclick="location.href='/';") Home
+        .item Menu
+        .item(onclick="location.href='contact';") Contact
+        .item(onclick="location.href='order';") Order
+        .item(onclick="location.href='logout';") Logout
+      .section
+        // En vertikal sektion
+        // bilden ovanför produkterna
+        .banner
+          img(src='images/baner.jpg')
+        #mainArea
+          .productsContainer
+            // alla produkter i produktlistan
+            .product
+              img(src='images/margharita.jpg' width='250' height='180')
+              p margharita 89kr
+            .product
+              img(src='images/pepperoni.jpg' width='250' height='180')
+              p pepperoni 89kr
+            .product
+              img(src='images/kebabpizza.jpg' width='250' height='180')
+              p kebab pizza 94kr
+            .product
+              img(src='images/kebabpizza-special.jpg' width='250' height='180')
+              p kebab pizza special 290kr
+            .product
+              img(src='images/vesuvio.jpg' width='250' height='180')
+              p vesuvio 89kr
+            .product
+              img(src='images/bbq-mega.webp' width='250' height='180')
+              p bbq mega pizza 499kr
+            .product
+              img(src='images/quattro.jpg' width='250' height='180')
+              p quattro 89kr
+            .product
+              img(src='images/pizza-special.jpg' width='250' height='180')
+              p pizza special 149 kr
+            .product
+              img(src='images/random-pizza.jpg' width='250' height='180')
+              p Random pizza 99kr
+    // footer med text
+    #footer

@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    div(class="userbackground")
+        div(class="login")
+            p Great Food Login
+            
+            form(action="/login", method="post")
+                input(type="text", placeholder="Enter Username", name="username", required)
+                input(type="password", placeholder="Enter Password", name="password", required)
+                button(type="submit") Login
+            a(href="register")
+                button(type="button") Skapa konto 
+            p= errorMsg

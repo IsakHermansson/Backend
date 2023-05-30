@@ -1,0 +1,25 @@
+extends layout
+
+block content
+    // en vertical container som allting ligger i för att underlätta strukturen
+    .verticalContainer
+      .section
+        #menuContainer
+          // alla olika items i menyn
+          .item(onclick="location.href='index';") Home
+          .item(onclick="location.href='menu';") Menu
+          .item Contact
+          .item(onclick="location.href='order';") Order
+          .item(onclick="location.href='logout';") Logout
+      .section
+        .dealercontainer
+          // två stycken bilder och text
+          .dealership
+            // <img src="images/grey.png">
+            p great.food@gmail.com
+          .dealership
+            img(src='images/contacticon.jpg')
+        .abouttext
+          // text
+          // footer med text
+          #footer

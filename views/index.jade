@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    // en vertical container som allting ligger i för att underlätta strukturen
+    .verticalContainer
+      section
+      #menuContainer
+        // alla olika items i menyn
+        .item Home
+        .item(onclick="location.href='menu'") Menu
+        .item(onclick="location.href='contact';") Contact
+        .item(onclick="location.href='order';") Order
+        .item(onclick="location.href='logout';") Logout
+    .section
+      .customerMessage
+        p Welcome. Always fresh and delightful pizza!
+    #footer
+

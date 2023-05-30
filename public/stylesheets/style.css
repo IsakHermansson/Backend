@@ -1,0 +1,298 @@
+body {
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+  margin:0px;
+  min-height:100vh;
+}
+
+/* Används för sidans huvudlayout. Använder flexbox för att dela upp sidan i vertikal sektioner */
+
+.verticalContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+  position:absolute;
+  top:0px;
+}
+
+.section {
+width:100%;
+
+}
+
+/* Definerar layout av meny mha flexbox */
+#menuContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  height:40px;
+  background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 0, 0) );
+}
+
+/* Definerar ytan där produktern visas på produktsidan*/
+#mainArea {
+  max-width:950px;
+  min-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.productsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  border: 2px;
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  background-color: rgb(190, 190, 190);
+}
+
+/* Klass för menyval i huvudmeny. Kan innehålla underelement som styrs med flexbox*/
+.item {
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-style: italic;
+  cursor: pointer;
+  vertical-align: middle;
+  width: 240px;
+  height:100%;
+  font-size: x-large;
+  margin: 0px;
+  color:rgb(71, 71, 71);
+ /* border: 2px solid rgb(36, 4, 4);
+  background-color: rgb(78, 7, 7); */
+}
+
+/* Klass som förstorar text i menyn när muspekaren är över*/
+.item:hover {
+  font-size: xx-large;  
+}
+
+.itemHoover {
+  font-size: xx-large;
+}
+
+.item > img {
+padding:2px;
+height:90%;
+}
+
+.customerMessage {
+  font-size: 42px;
+  font-style: italic;
+  color:white;
+  text-align: center;
+  vertical-align: middle;
+  height: calc(100vh - 80px);
+  background-image: url("../images/pizza-back3.jpg");
+  background-size: cover;
+  padding: 100px;
+}
+
+.title {
+     display: flex ;
+     justify-content:center;
+     font-size: xx-large;
+     height: 150px;
+     width: 100px;
+     margin: auto;
+     padding: 20px 0;
+     
+}
+.preview {
+     display: flex ;
+     justify-content:center;
+     font-size: x-large;
+     height: 200px;
+     width: 250px;
+     margin: 15px;
+     margin-bottom: 15px;
+
+
+}
+
+/* styling av footern. Skall alltid ligg alängst ner och synas*/
+#footer {
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: rgb(255, 0, 0);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+} 
+
+.footer > p { 
+font-size: large;
+margin: 0px;
+}
+
+.banner {
+  font-size: xx-large;
+  width:100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -20px;
+  margin-top:0px;
+  background-color: rgb(0, 0, 0);
+}
+
+
+.product {
+  display: flex ;
+  flex-direction: column;
+  justify-content:center;
+  font-size: x-large;
+  height: 100%;
+  margin: 20px;
+  padding:10px;
+}
+
+
+.order {
+  background-color: gray;
+  width:500px;
+  display: flex ;
+  flex-direction: column;
+  justify-content:center;
+  padding:20px;
+}
+
+.center {
+  left:400px;
+  width:400px;
+  top:100px;
+  margin: 30px;
+  margin-left: 300px;
+  background-color: gray;
+}
+.product > p {
+  margin: 20px;
+  color: rgb(211, 209, 206);
+  font-size: 16px;
+  background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 0, 0) );
+  padding: 2px;
+  font-style: initial;
+}
+
+
+
+
+.dealership {
+  font-size: medium;
+*width: 100%;
+  height: 70%;
+  margin-left: 0px;
+  margin-right: 0px;
+  display: flex;
+  justify-content: right;
+  margin-bottom: -20px;
+  margin-top: 10px;
+  background-color: grey;
+ /* background-image: url("images/contacticon.jpg");*/
+  background-position: right;
+}
+
+.dealership p {
+  width:300px;
+  padding:30px;
+  font-size: 14pt;
+}
+
+
+
+.dealercontainer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 470px;
+}
+
+.dealercontainer > img {
+  height: 200px;
+}
+
+.dealercontainer > p {
+  text-align: center;
+  font-size: xx-large;
+}
+
+.abouttext {
+  display: flex;
+  flex-wrap: right;
+  justify-content: center;
+  margin-top:30px;
+  font-size: 18px;
+  font-style: italic;
+  color:white;
+  text-align: center;
+}
+
+.abouttext > p {
+    width:50%;
+}
+
+.documentation {
+  margin-left: 40px;;
+  margin-top:30px;
+  font-size: 18px;
+  font-style: italic;
+  color:white;
+  text-align: left;
+}
+
+.documentation > p {
+  width:70%;
+}
+
+
+.login {
+  background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 0, 0) );
+  width:400px;
+  height: 220px;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: 100px;
+  padding-top:20px; 
+  padding-left: 50px;
+}
+
+.login p {
+  color:white;
+  font-size: x-large;
+}
+
+.register {
+  background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 0, 0) );
+  width:600px;
+  height: 120px;
+  margin-left:auto;
+  margin-right: auto;
+  padding-top:20px; 
+  padding-left: 50px;
+}
+
+.register p {
+  color:white;
+  font-size: x-large;
+}
+
+.userbackground {
+  height:100vh;
+  padding-top: 50px;
+  /*background-color: grey; */
+  background-image: url("../images/pizza-back3.jpg");
+}
+
